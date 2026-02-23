@@ -92,7 +92,10 @@ a {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
   padding: 14px 32px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -123,6 +126,7 @@ a {
   color: var(--aa-blue);
   font-weight: 400;
   font-size: 16px;
+  padding: 4px 0;
   transition: opacity 0.2s ease;
 }
 
@@ -793,6 +797,7 @@ a {
 .footer__links-list a {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+  padding: 4px 0;
   transition: color 0.15s ease;
 }
 
@@ -1603,7 +1608,12 @@ a {
   }
 
   .leadership-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadership-card__photo {
+    width: 130px;
+    height: 130px;
   }
 
   .hub-grid {
@@ -1613,6 +1623,39 @@ a {
   .metrics-strip__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+  }
+
+  .page-hero {
+    padding: 80px 0 48px;
+  }
+
+  .page-hero__title {
+    font-size: 38px;
+  }
+
+  .card-grid__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading {
+    font-size: 36px;
+  }
+
+  .case-study-card {
+    padding: 28px 24px;
+  }
+
+  .quote-block__text {
+    font-size: 20px;
+  }
+
+  .process-step__number {
+    width: 44px;
+    height: 44px;
+  }
+
+  .content-section__image-placeholder {
+    min-height: 240px;
   }
 }
 
@@ -1754,7 +1797,7 @@ a {
   }
 
   .metrics-strip__number {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .contact-sidebar {
@@ -1766,8 +1809,139 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .contact-form__input,
+  .contact-form__select {
+    min-height: 48px;
+  }
+
+  .contact-sidebar__map-placeholder {
+    min-height: 160px;
+  }
+
   .process-step {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .process-step__number {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 16px 28px;
+  }
+
+  .leadership-card__photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .leadership-card__bio {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-grid__card {
+    padding: 28px 20px;
+  }
+
+  .card-grid__card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hub-tile {
+    padding: 28px 20px;
+  }
+
+  .hub-tile__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .case-study-card {
+    padding: 24px 20px;
+  }
+
+  .case-study-card__title {
+    font-size: 18px;
+  }
+
+  .quote-block__text {
+    font-size: 18px;
+  }
+
+  .legal-content__prose h2 {
+    font-size: 24px;
+  }
+
+  .page-hero__subtitle {
+    font-size: 16px;
+  }
+
+  .footer__links-list a {
+    font-size: 15px;
+  }
+
+  .content-section__image-placeholder {
+    min-height: 200px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — SMALL MOBILE (≤ 480px)
+   ======================================== */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero__headline {
+    font-size: 28px;
+  }
+
+  .page-hero {
+    padding: 72px 0 32px;
+  }
+
+  .page-hero__title {
+    font-size: 26px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .metrics__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics__number {
+    font-size: 32px;
+  }
+
+  .metrics-strip__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-strip__number {
+    font-size: 32px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-closing__heading {
+    font-size: 26px;
   }
 }
